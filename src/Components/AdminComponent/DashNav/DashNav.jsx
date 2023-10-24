@@ -113,12 +113,14 @@ export function DrawerDefault() {
                 />
               </ListItemSuffix>
             </ListItem>
-            <ListItem className="text-white">
-              <ListItemPrefix>
-                <UserCircleIcon className="h-5 w-5 text-white" />
-              </ListItemPrefix>
-              Profile
-            </ListItem>
+            <NavLink to={"/dashboard/dashProfile"}>
+              <ListItem className="text-white">
+                <ListItemPrefix>
+                  <UserCircleIcon className="h-5 w-5 text-white" />
+                </ListItemPrefix>
+                Profile
+              </ListItem>
+            </NavLink>
             <ListItem className="text-white">
               <ListItemPrefix>
                 <Cog6ToothIcon className="h-5 w-5 text-white" />
@@ -161,6 +163,16 @@ export function DashNav() {
             </ListItemPrefix>
             Cash Book
           </ListItem>
+
+          <NavLink to={"/dashboard/DashCashBook"}>
+            <ListItem className="text-white">
+              <ListItemPrefix>
+                <BookOpenIcon className="h-5 w-5 text-white" />
+              </ListItemPrefix>
+              Cash Book
+            </ListItem>
+          </NavLink>
+
           <ListItem className="text-white">
             <ListItemPrefix>
               <ArrowDownOnSquareStackIcon className="h-5 w-5 text-white" />
@@ -188,12 +200,14 @@ export function DashNav() {
               />
             </ListItemSuffix>
           </ListItem>
-          <ListItem className="text-white">
-            <ListItemPrefix>
-              <UserCircleIcon className="h-5 w-5 text-white" />
-            </ListItemPrefix>
-            Profile
-          </ListItem>
+          <NavLink to={"/dashboard/dashProfile"}>
+            <ListItem className="text-white">
+              <ListItemPrefix>
+                <UserCircleIcon className="h-5 w-5 text-white" />
+              </ListItemPrefix>
+              Profile
+            </ListItem>
+          </NavLink>
           <ListItem className="text-white">
             <ListItemPrefix>
               <Cog6ToothIcon className="h-5 w-5 text-white" />

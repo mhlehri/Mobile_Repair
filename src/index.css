@@ -7,3 +7,6 @@ body {
   color: #141e46;
   font-family: "Nunito", sans-serif;
 }
+.container {
+  padding: 0px 8px;
+}
