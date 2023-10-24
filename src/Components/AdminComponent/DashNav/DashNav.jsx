@@ -19,7 +19,7 @@ import {
 import { FaHourglassStart } from "react-icons/fa";
 import React from "react";
 import { Drawer, IconButton } from "@material-tailwind/react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './style.css'
 
 export function DrawerDefault() {
