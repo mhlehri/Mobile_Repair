@@ -7,6 +7,7 @@ import Login from "./../pages/UserPages/Login/Login";
 import UserForm from "./../pages/UserPages/UserForm/UserForm";
 import GetUpdate from "../pages/UserPages/GetUpdate/GetUpdate";
 import DashHome from "../Components/AdminComponent/DashHome/DashHome";
+import UserDashboard from "../Components/UserComponent/UserDashboard/UserDashboard";
 
 const Router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ const Router = createBrowserRouter([
         path: "/GetYourUpdates",
         element: <GetUpdate></GetUpdate>,
       },
+     
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
