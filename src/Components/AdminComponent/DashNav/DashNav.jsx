@@ -72,14 +72,14 @@ export function DrawerDefault() {
 
         <Card className="h-screen bg-[#141E46]  text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
           <List>
-          <NavLink to={'/dashboard/dashHome'}>
-             <ListItem className="text-white text-right">
-              <ListItemPrefix className="">
-                <PresentationChartBarIcon className="h-5 w-5 text-white" />
-              </ListItemPrefix>
-              Dashboard
-            </ListItem>
-          </NavLink>
+            <NavLink to={"/dashboard/dashHome"}>
+              <ListItem className="text-white text-right">
+                <ListItemPrefix className="">
+                  <PresentationChartBarIcon className="h-5 w-5 text-white" />
+                </ListItemPrefix>
+                Dashboard
+              </ListItem>
+            </NavLink>
             <ListItem className="text-white">
               <ListItemPrefix>
                 <BookOpenIcon className="h-5 w-5 text-white" />
@@ -113,12 +113,14 @@ export function DrawerDefault() {
                 />
               </ListItemSuffix>
             </ListItem>
-            <ListItem className="text-white">
-              <ListItemPrefix>
-                <UserCircleIcon className="h-5 w-5 text-white" />
-              </ListItemPrefix>
-              Profile
-            </ListItem>
+            <NavLink to={"/dashboard/dashProfile"}>
+              <ListItem className="text-white">
+                <ListItemPrefix>
+                  <UserCircleIcon className="h-5 w-5 text-white" />
+                </ListItemPrefix>
+                Profile
+              </ListItem>
+            </NavLink>
             <ListItem className="text-white">
               <ListItemPrefix>
                 <Cog6ToothIcon className="h-5 w-5 text-white" />
@@ -146,21 +148,23 @@ export function DashNav() {
           <Typography variant="h5">Repair Center</Typography>
         </div>
         <List>
-         <NavLink to={'/dashboard/dashHome'}>
-          <ListItem className="text-white text-right">
+          <NavLink to={"/dashboard/dashHome"}>
+            <ListItem className="text-white text-right">
               <ListItemPrefix className="">
                 <PresentationChartBarIcon className="h-5 w-5 text-white" />
               </ListItemPrefix>
               <span className="hidden md:block">Dashboard</span>
             </ListItem>
-         </NavLink>
-          
-          <ListItem className="text-white">
-            <ListItemPrefix>
-              <BookOpenIcon className="h-5 w-5 text-white" />
-            </ListItemPrefix>
-            Cash Book
-          </ListItem>
+          </NavLink>
+
+          <NavLink to={"/dashboard/DashCashBook"}>
+            <ListItem className="text-white">
+              <ListItemPrefix>
+                <BookOpenIcon className="h-5 w-5 text-white" />
+              </ListItemPrefix>
+              Cash Book
+            </ListItem>
+          </NavLink>
           <ListItem className="text-white">
             <ListItemPrefix>
               <ArrowDownOnSquareStackIcon className="h-5 w-5 text-white" />
@@ -188,12 +192,14 @@ export function DashNav() {
               />
             </ListItemSuffix>
           </ListItem>
-          <ListItem className="text-white">
-            <ListItemPrefix>
-              <UserCircleIcon className="h-5 w-5 text-white" />
-            </ListItemPrefix>
-            Profile
-          </ListItem>
+          <NavLink to={"/dashboard/dashProfile"}>
+            <ListItem className="text-white">
+              <ListItemPrefix>
+                <UserCircleIcon className="h-5 w-5 text-white" />
+              </ListItemPrefix>
+              Profile
+            </ListItem>
+          </NavLink>
           <ListItem className="text-white">
             <ListItemPrefix>
               <Cog6ToothIcon className="h-5 w-5 text-white" />
