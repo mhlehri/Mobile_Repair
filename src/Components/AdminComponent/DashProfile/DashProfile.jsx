@@ -12,6 +12,9 @@ const DashProfile = () => {
           <div className="bg-white p-10 rounded-xl ">
             <form action="">
               <div>
+                <h4 className="font-bold px-4 text-blue-gray-400 py-2 w-max">
+                  User Details
+                </h4>
                 <div className="flex flex-col md:flex-row md:gap-10  p-5 rounded-lg">
                   <div className="relative z-0  mb-6 group md:w-1/2">
                     <input
@@ -133,7 +136,11 @@ const DashProfile = () => {
                   </div>
                 </div>
                 <div className="px-4 py-2 bg-[#141E46] text-white text-center rounded-lg">
-                  <input className='w-full' type="submit" value="Update Profile" />
+                  <input
+                    className="w-full"
+                    type="submit"
+                    value="Update Profile"
+                  />
                 </div>
               </div>
             </form>
