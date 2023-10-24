@@ -19,7 +19,8 @@ import {
 import { FaHourglassStart } from "react-icons/fa";
 import React from "react";
 import { Drawer, IconButton } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import './style.css'
 
 export function DrawerDefault() {
   const [open, setOpen] = React.useState(false);
@@ -69,16 +70,16 @@ export function DrawerDefault() {
           </IconButton>
         </div>
 
-        <Card className="h-screen bg-[#141E46]  text-white w-full max-w-[14rem] rounded-none shadow-xl shadow-blue-gray-900/5">
+        <Card className="h-screen bg-[#141E46]  text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
           <List>
-          <Link to='/dashboard/dashhome'>  
+          <NavLink to={'/dashboard/dashHome'}>
              <ListItem className="text-white text-right">
               <ListItemPrefix className="">
                 <PresentationChartBarIcon className="h-5 w-5 text-white" />
               </ListItemPrefix>
               Dashboard
             </ListItem>
-          </Link>
+          </NavLink>
             <ListItem className="text-white">
               <ListItemPrefix>
                 <BookOpenIcon className="h-5 w-5 text-white" />
@@ -140,17 +141,20 @@ export function DashNav() {
   return (
     <div>
       <DrawerDefault></DrawerDefault>
-      <Card className="h-screen bg-[#141E46] hidden lg:block text-white w-full max-w-[14rem] rounded-none shadow-xl shadow-blue-gray-900/5">
+      <Card className="h-screen bg-[#141E46] hidden lg:block text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
         <div className="mb-2 p-4">
           <Typography variant="h5">Repair Center</Typography>
         </div>
         <List>
+         <NavLink to={'/dashboard/dashHome'}>
           <ListItem className="text-white text-right">
-            <ListItemPrefix className="">
-              <PresentationChartBarIcon className="h-5 w-5 text-white" />
-            </ListItemPrefix>
-            <span className="hidden md:block">Dashboard</span>
-          </ListItem>
+              <ListItemPrefix className="">
+                <PresentationChartBarIcon className="h-5 w-5 text-white" />
+              </ListItemPrefix>
+              <span className="hidden md:block">Dashboard</span>
+            </ListItem>
+         </NavLink>
+          
           <ListItem className="text-white">
             <ListItemPrefix>
               <BookOpenIcon className="h-5 w-5 text-white" />

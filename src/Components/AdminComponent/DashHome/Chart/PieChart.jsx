@@ -3,10 +3,10 @@ import React, { PureComponent } from 'react';
 import { PieChart as ChartPie, Pie, Sector, Cell, ResponsiveContainer,Legend ,Tooltip as ChartToops} from 'recharts';
 
 const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
+  { name: 'Revenue', value: 400 },
+  { name: 'Expence', value: 300 },
+  { name: 'Sales', value: 300 },
+  { name: 'Chancel', value: 200 },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];

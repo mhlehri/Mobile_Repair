@@ -35,7 +35,7 @@ const Router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children:[
           {
-            path:'/dashboard/dashhome',
+            path:'/dashboard/dashHome',
             element:<DashHome></DashHome>
           }
         ]

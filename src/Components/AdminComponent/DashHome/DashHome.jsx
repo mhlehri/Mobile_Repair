@@ -24,14 +24,14 @@ const DashHome = () => {
             <div className="w-full md:flex gap-6">
                 <div className="w-full md:w-3/5 h-auto bg-[#FFFFFF] p-6 mt-5 rounded-md border">
                     <div className="mb-2">
-                        <h1 className="text-xl font-bold">Revenue Report</h1>
+                        <h1 className="text-xl font-semibold">Daily Revenue Report</h1>
                         <h1>Total Profit : $2342353</h1>
                     </div>
                    <LineChart></LineChart>
                 </div>
                 <div className="bg-[#FFFFFF] p-6 mt-5 rounded-md border flex-1">
                 <div className="mb-2">
-                        <h1 className="text-xl font-bold">Analytics Report</h1>
+                        <h1 className="text-[18px] font-semibold">Monthly Analytics Report</h1>
                     </div>
                     <PieChart></PieChart>
                 </div>

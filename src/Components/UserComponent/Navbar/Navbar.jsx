@@ -25,6 +25,9 @@ export function StickyNavbar() {
       <Link to={"/GetYourUpdates"}>
         <a className="flex items-center">Get Update</a>
       </Link>
+      <Link to={"/dashboard/dashHome"}>
+        <a className="flex items-center">Dashboard</a>
+      </Link>
     </ul>
   );
 
