@@ -6,6 +6,7 @@ import Home from "./../pages/UserPages/Home/Home";
 import Login from "./../pages/UserPages/Login/Login";
 import UserForm from "./../pages/UserPages/UserForm/UserForm";
 import GetUpdate from "../pages/UserPages/GetUpdate/GetUpdate";
+import DashHome from "../Components/AdminComponent/DashHome/DashHome";
 
 const Router = createBrowserRouter([
   {
@@ -32,6 +33,12 @@ const Router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        children:[
+          {
+            path:'/dashboard/dashhome',
+            element:<DashHome></DashHome>
+          }
+        ]
       },
     ],
   },
