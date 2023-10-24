@@ -34,7 +34,7 @@ export function StickyNavbar() {
   return (
     <div className="h-[10vh]  mx-auto">
       <Navbar className="h-full  backdrop-blur-lg bg-[#64ccc5] max-w-full border-none rounded-none px-2 py-2 lg:px-8 lg:py-4">
-        <div className="max-w-screen-2xl mx-auto">
+        <div className="container mx-auto">
           {" "}
           <div className="flex items-center justify-between text-[#141E46]">
             <h1 className="mr-4 cursor-pointer py-1.5  font-medium">
@@ -92,7 +92,7 @@ export function StickyNavbar() {
               </IconButton>
             </div>
           </div>
-          <MobileNav open={openNav} className="p-3 rounded-lg bg-[#24746f]">
+          <MobileNav open={openNav} className="p-3  rounded-lg bg-[#24746f]">
             {navList}
             <div className="flex items-center gap-x-1">
               <Link to="/login">
