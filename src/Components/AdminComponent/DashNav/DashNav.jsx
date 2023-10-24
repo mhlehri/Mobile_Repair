@@ -157,12 +157,14 @@ export function DashNav() {
             </ListItem>
           </NavLink>
 
-          <ListItem className="text-white">
-            <ListItemPrefix>
-              <BookOpenIcon className="h-5 w-5 text-white" />
-            </ListItemPrefix>
-            Cash Book
-          </ListItem>
+          <NavLink to={"/dashboard/DashCashBook"}>
+            <ListItem className="text-white">
+              <ListItemPrefix>
+                <BookOpenIcon className="h-5 w-5 text-white" />
+              </ListItemPrefix>
+              Cash Book
+            </ListItem>
+          </NavLink>
           <ListItem className="text-white">
             <ListItemPrefix>
               <ArrowDownOnSquareStackIcon className="h-5 w-5 text-white" />
