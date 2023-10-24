@@ -1,65 +1,80 @@
-import React, { PureComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-const data = [
-    
-    {
-      name: 'Page F',
-      sales: 2390,
-      expence: 3800,
-      revenue: 2500,
-    },
-    {
-      name: 'Page F',
-      sales: 2390,
-      expence: 3800,
-      revenue: 2500,
-    },
-    {
-      name: 'Page F',
-      sales: 2390,
-      expence: 3800,
-      revenue: 2500,
-    },
-    {
-      name: 'Page F',
-      sales: 2390,
-      expence: 3800,
-      revenue: 2500,
-    },
-    {
-      name: 'Page F',
-      sales: 2390,
-      expence: 3800,
-      revenue: 2500,
-    },
-    {
-      name: 'Page F',
-      sales: 2390,
-      expence: 3800,
-      revenue: 2500,
-    },
-    {
-      name: 'Page G',
-      sales: 3490,
-      expence: 4300,
-      revenue: 2100,
-    },
-  ];
-  
+import { CChart } from "@coreui/react-chartjs";
+
 const LineChart = () => {
-    return (
-        
-        <BarChart width={700} height={500} data={data}>
-          <Bar dataKey="sales" fill="#5C1AC3" strokeWidth={10} />
-          <Bar dataKey="expence" fill="#F4CE14" strokeWidth={10} />
-          <Bar dataKey="revenue" fill="#141E46" strokeWidth={10} />
-          <Tooltip></Tooltip>
-          <XAxis></XAxis>
-          <YAxis></YAxis>
-          <Legend></Legend>
-        </BarChart>
-      
-    );
+  return (
+    <CChart
+      type="bar"
+      data={{
+        labels: [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+        ],
+        datasets: [
+          {
+            label: "Daily Earnings",
+            backgroundColor: "#f87979",
+            data: [10, 20, 12, 39, 100, 40, 39, 80, 40],
+          },
+        ],
+      }}
+      labels="months"
+      options={{
+        plugins: {
+          legend: {
+            labels: {
+              color: "grey",
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: {
+              color: "grey",
+            },
+            ticks: {
+              color: "red",
+            },
+          },
+          y: {
+            grid: {
+              color: "grey",
+            },
+            ticks: {
+              color: "red",
+            },
+          },
+        },
+      }}
+    />
+  );
 };
 
 export default LineChart;

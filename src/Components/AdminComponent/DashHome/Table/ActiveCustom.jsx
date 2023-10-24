@@ -16,7 +16,7 @@ import {
   IconButton,
   Tooltip,
 } from "@material-tailwind/react";
- 
+
 const TABS = [
   {
     label: "All",
@@ -31,9 +31,9 @@ const TABS = [
     value: "Pending",
   },
 ];
- 
+
 const TABLE_HEAD = ["Customers", "Info", "Status", "Entry", "Edite"];
- 
+
 const TABLE_ROWS = [
   {
     img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-3.jpg",
@@ -81,12 +81,11 @@ const TABLE_ROWS = [
     date: "04/10/21",
   },
 ];
- 
+
 export function ActiveCustom() {
   return (
     <Card className="h-full w-full mt-6">
       <CardHeader floated={false} shadow={false} className="rounded-none">
-        
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <Tabs value="all" className="w-full md:w-max">
             <TabsHeader>
@@ -132,7 +131,7 @@ export function ActiveCustom() {
                 const classes = isLast
                   ? "p-4"
                   : "p-4 border-b border-blue-gray-50";
- 
+
                 return (
                   <tr key={name}>
                     <td className={classes}>
@@ -202,7 +201,7 @@ export function ActiveCustom() {
                     </td>
                   </tr>
                 );
-              },
+              }
             )}
           </tbody>
         </table>

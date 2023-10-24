@@ -19,7 +19,7 @@ import {
 import { FaHourglassStart } from "react-icons/fa";
 import React from "react";
 import { Drawer, IconButton } from "@material-tailwind/react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 
 export function DrawerDefault() {
@@ -29,8 +29,8 @@ export function DrawerDefault() {
   const closeDrawer = () => setOpen(false);
 
   return (
-    <React.Fragment>
-      <div className="  h-fit fixed lg:hidden  p-2">
+    <React.Fragment className="">
+      <div className="lg:hidden fixed  bg-blue-gray-600 w-full p-2">
         <IconButton onClick={openDrawer} className="bg-[#141e46]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export function DrawerDefault() {
           </svg>
         </IconButton>
       </div>
-      <Drawer open={open} onClose={closeDrawer} className="p-4  bg-[#141E46]  ">
+      <Drawer open={open} onClose={closeDrawer} className="p-4  bg-[#141E46]">
         <div className="flex items-center justify-between">
           <Typography variant="h5" className="text-white">
             Admin Panel
@@ -70,7 +70,7 @@ export function DrawerDefault() {
           </IconButton>
         </div>
 
-        <Card className=" bg-transparent text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
+        <Card className=" bg-transparent text-white w-full  rounded-none shadow-xl shadow-blue-gray-900/5">
           <List>
             <NavLink to={"/dashboard/dashHome"}>
               <ListItem className="text-white text-right">
@@ -141,9 +141,9 @@ export function DrawerDefault() {
 }
 export function DashNav() {
   return (
-    <div className="z-50">
+    <div className="z-50 m-0 fixed">
       <DrawerDefault></DrawerDefault>
-      <Card className="h-screen  bg-[#141E46] hidden lg:block text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
+      <Card className="lg:h-screen   bg-[#141E46] hidden lg:block text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
         <div className="mb-2 p-4">
           <Typography variant="h5">Repair Center</Typography>
         </div>
@@ -156,13 +156,6 @@ export function DashNav() {
               <span className="hidden md:block">Dashboard</span>
             </ListItem>
           </NavLink>
-
-          <ListItem className="text-white">
-            <ListItemPrefix>
-              <BookOpenIcon className="h-5 w-5 text-white" />
-            </ListItemPrefix>
-            Cash Book
-          </ListItem>
 
           <NavLink to={"/dashboard/DashCashBook"}>
             <ListItem className="text-white">

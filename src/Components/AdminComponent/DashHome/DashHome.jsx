@@ -5,9 +5,8 @@ import { ActiveCustom } from "./Table/ActiveCustom";
 
 const DashHome = () => {
   return (
-    <div className="bg-[#F7F6F9] px-6 py-6">
-      <h1>home here</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="w-full mx-auto  px-6 pb-10 pt-20 lg:pt-10">
+      <div className="grid md:grid-cols-2 gap-2  lg:gap-6">
         <Cardinfo>
           {{
             title: "Active Customer",
@@ -107,15 +106,15 @@ const DashHome = () => {
           }}
         </Cardinfo>
       </div>
-      <div className="w-full md:flex gap-6">
-        <div className="w-full md:w-3/5 h-auto bg-[#FFFFFF] p-6 mt-5 rounded-md border">
-          <div className="mb-2">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+        <div className="w-full bg-[#FFFFFF] p-6 mt-3 lg:mt-5 rounded-md border">
+          {/* <div className="mb-2">
             <h1 className="text-xl font-semibold">Daily Revenue Report</h1>
             <h1>Total Profit : $2342353</h1>
-          </div>
+          </div> */}
           <LineChart></LineChart>
         </div>
-        <div className="bg-[#FFFFFF] p-6 mt-5 rounded-md border flex-1">
+        <div className="w-full bg-[#FFFFFF]   p-6 mt-2 lg:mt-5 rounded-md border">
           <div className="mb-2">
             <h1 className="text-[18px] font-semibold">
               Monthly Analytics Report
@@ -125,7 +124,7 @@ const DashHome = () => {
         </div>
       </div>
       <div>
-        <div className="full">
+        <div className="">
           <ActiveCustom></ActiveCustom>
         </div>
       </div>

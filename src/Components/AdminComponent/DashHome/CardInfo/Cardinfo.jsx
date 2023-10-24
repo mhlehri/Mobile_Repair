@@ -2,7 +2,7 @@ import CardLine from "../Chart/CardLine";
 
 const Cardinfo = ({ children }) => {
   return (
-    <div className="w-full  h-auto bg-[#FFFFFF] p-6 rounded-md space-y-4 border ">
+    <div className="bg-white h-auto  p-6 rounded-md border ">
       <h1>{children.title}</h1>
       <div className="flex gap-4">
         <span className="-z-0">{children.icon}</span>
