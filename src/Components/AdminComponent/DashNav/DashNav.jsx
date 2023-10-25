@@ -72,7 +72,7 @@ export function DrawerDefault() {
 
         <Card className=" bg-transparent text-white w-full  rounded-none shadow-xl shadow-blue-gray-900/5">
           <List>
-            <NavLink to={"/dashboard/dashHome"}>
+            <NavLink to="/dashboard/dashHome">
               <ListItem className="text-white text-right">
                 <ListItemPrefix className="">
                   <PresentationChartBarIcon className="h-5 w-5 text-white" />
@@ -80,7 +80,7 @@ export function DrawerDefault() {
                 Dashboard
               </ListItem>
             </NavLink>
-            <ListItem className="text-white">
+            <ListItem className="text-white ">
               <ListItemPrefix>
                 <BookOpenIcon className="h-5 w-5 text-white" />
               </ListItemPrefix>
@@ -113,7 +113,7 @@ export function DrawerDefault() {
                 />
               </ListItemSuffix>
             </ListItem>
-            <NavLink to={"/dashboard/dashProfile"}>
+            <NavLink to="/dashboard/dashProfile">
               <ListItem className="text-white">
                 <ListItemPrefix>
                   <UserCircleIcon className="h-5 w-5 text-white" />
