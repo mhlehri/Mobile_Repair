@@ -84,13 +84,22 @@ const TABLE_ROWS = [
 
 const DashCashBook = () => {
   return (
+
     <div className="w-full  flex flex-col lg:justify-center px-6 mt-20 lg:mt-0">
+
+    <div className="w-full h-screen flex flex-col lg:justify-center px-6 mt-20 lg:mt-0">
+
       <div className="mb-3">
         <h2 className="text-2xl">Cashbook</h2>
       </div>
       <div>
+
         <Card className=" w-full  overflow-scroll md:overflow-hidden max-w-full">
           <table className="w-full  min-w-max table-auto text-left">
+
+        <Card className=" w-full max-w-full">
+          <table className="w-full min-w-max table-auto text-left">
+
             <thead>
               <tr>
                 {TABLE_HEAD.map((head) => (
