@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="h-[90vh] lg:full container mx-auto flex justify-center p-3">
-      <div className="flex items-center h-full justify-center lg:justify-between flex-col lg:flex-row-reverse">
-        <img
-          src="https://i.ibb.co/fYJGLVS/3178996.webp"
-          className="max-w-sm rounded-lg hidden lg:block"
-        />
+    <div className=" container mx-auto flex items-center h-[90vh] justify-center p-3">
+      <div className="flex items-center h-full justify-center gap-5 lg:gap-0 lg:justify-between flex-col lg:flex-row-reverse">
+        <div>
+          <img
+            src="https://i.ibb.co/fYJGLVS/3178996.webp"
+            className="rounded-lg "
+          />
+        </div>
         <div className="w-full lg:w-1/2 ">
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">
             Mobile Solution

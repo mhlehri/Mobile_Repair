@@ -20,7 +20,7 @@ import { FaHourglassStart } from "react-icons/fa";
 import React from "react";
 import { Drawer, IconButton } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
-import './style.css'
+import "./style.css";
 
 export function DrawerDefault() {
   const [open, setOpen] = React.useState(false);
@@ -29,8 +29,8 @@ export function DrawerDefault() {
   const closeDrawer = () => setOpen(false);
 
   return (
-    <React.Fragment>
-      <div className="w-100vh bg-[#64ccc5] h-fit block lg:hidden p-2">
+    <React.Fragment className="">
+      <div className="lg:hidden fixed  bg-blue-gray-600 w-full p-2">
         <IconButton onClick={openDrawer} className="bg-[#141e46]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@ export function DrawerDefault() {
           </svg>
         </IconButton>
       </div>
-      <Drawer open={open} onClose={closeDrawer} className="p-4 bg-[#141E46] ">
-        <div className="mb-6 flex items-center justify-between">
+      <Drawer open={open} onClose={closeDrawer} className="p-4  bg-[#141E46]">
+        <div className="flex items-center justify-between">
           <Typography variant="h5" className="text-white">
             Admin Panel
           </Typography>
@@ -70,7 +70,7 @@ export function DrawerDefault() {
           </IconButton>
         </div>
 
-        <Card className="h-screen bg-[#141E46]  text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
+        <Card className=" bg-transparent text-white w-full  rounded-none shadow-xl shadow-blue-gray-900/5">
           <List>
             <NavLink to={"/dashboard/dashHome"}>
               <ListItem className="text-white text-right">
@@ -141,9 +141,9 @@ export function DrawerDefault() {
 }
 export function DashNav() {
   return (
-    <div>
+    <div className="z-50 m-0 fixed">
       <DrawerDefault></DrawerDefault>
-      <Card className="h-screen bg-[#141E46] hidden lg:block text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
+      <Card className="lg:h-screen   bg-[#141E46] hidden lg:block text-white w-full max-w-[16rem] rounded-none shadow-xl shadow-blue-gray-900/5">
         <div className="mb-2 p-4">
           <Typography variant="h5">Repair Center</Typography>
         </div>
@@ -165,6 +165,7 @@ export function DashNav() {
               Cash Book
             </ListItem>
           </NavLink>
+
           <ListItem className="text-white">
             <ListItemPrefix>
               <ArrowDownOnSquareStackIcon className="h-5 w-5 text-white" />
