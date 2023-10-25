@@ -29,7 +29,7 @@ export function DrawerDefault() {
   const closeDrawer = () => setOpen(false);
 
   return (
-    <React.Fragment className="">
+    <React.Fragment>
       <div className="lg:hidden fixed  bg-blue-gray-600 w-full p-2">
         <IconButton onClick={openDrawer} className="bg-[#141e46]">
           <svg
@@ -70,11 +70,11 @@ export function DrawerDefault() {
           </IconButton>
         </div>
 
-        <Card className=" bg-transparent text-white w-full  rounded-none shadow-xl shadow-blue-gray-900/5">
+        <Card className="bg-transparent text-white w-full  rounded-none shadow-xl shadow-blue-gray-900/5">
           <List>
             <NavLink to="/dashboard/dashHome">
               <ListItem className="text-white text-right">
-                <ListItemPrefix className="">
+                <ListItemPrefix >
                   <PresentationChartBarIcon className="h-5 w-5 text-white" />
                 </ListItemPrefix>
                 Dashboard
@@ -101,7 +101,7 @@ export function DrawerDefault() {
             </ListItem>
             <ListItem className="text-white">
               <ListItemPrefix>
-                <InboxIcon className="h-5 w-5 text-white" />
+                <InboxIcon className="h-5 w-5 text-white"/>
               </ListItemPrefix>
               Inbox
               <ListItemSuffix>
@@ -116,14 +116,14 @@ export function DrawerDefault() {
             <NavLink to="/dashboard/dashProfile">
               <ListItem className="text-white">
                 <ListItemPrefix>
-                  <UserCircleIcon className="h-5 w-5 text-white" />
+                  <UserCircleIcon className="h-5 w-5 text-white"/>
                 </ListItemPrefix>
                 Profile
               </ListItem>
             </NavLink>
             <ListItem className="text-white">
               <ListItemPrefix>
-                <Cog6ToothIcon className="h-5 w-5 text-white" />
+                <Cog6ToothIcon className="h-5 w-5 text-white"/>
               </ListItemPrefix>
               Settings
             </ListItem>

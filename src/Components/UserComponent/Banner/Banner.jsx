@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className=" container mx-auto flex items-center h-[90vh] justify-center p-3">
+    <div className="container mx-auto flex items-center h-[90vh] justify-center p-3">
       <div className="flex items-center h-full justify-center gap-5 lg:gap-0 lg:justify-between flex-col lg:flex-row-reverse">
         <div>
           <img
