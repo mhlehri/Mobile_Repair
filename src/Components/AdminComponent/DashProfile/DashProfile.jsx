@@ -2,7 +2,7 @@ import { Button } from "@material-tailwind/react";
 
 const DashProfile = () => {
   return (
-    <div className="flex flex-col md:flex-row h-[100vh] justify-center items-center gap-5   w-full container mx-auto">
+    <div className="flex flex-col md:flex-row md:h-[100vh] justify-center items-center gap-5   w-full container mx-auto">
       {/* left column  */}
 
       <div className="flex flex-col md:w-1/2 space-y-6">
@@ -15,7 +15,7 @@ const DashProfile = () => {
               <h4 className="font-bold px-4 text-blue-gray-400 py-2 w-max">
                 User Details
               </h4>
-              <div className="flex flex-col md:flex-row md:gap-10  p-5 rounded-lg">
+              <div className="flex flex-col md:flex-row md:gap-10  md:p-5  rounded-lg">
                 <div className="relative z-0  mb-6 group md:w-1/2">
                   <input
                     type="text"
@@ -49,7 +49,7 @@ const DashProfile = () => {
                   </label>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row md:gap-10  p-5 rounded-lg">
+              <div className="flex flex-col md:flex-row md:gap-10  md:p-5 rounded-lg">
                 <div className="relative z-0  mb-6 group md:w-1/2">
                   <input
                     type="text"
@@ -83,7 +83,7 @@ const DashProfile = () => {
                   </label>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row md:gap-10  p-5 rounded-lg">
+              <div className="flex flex-col md:flex-row md:gap-10  md:p-5 rounded-lg">
                 <div className="relative z-0  mb-6 group md:w-1/2">
                   <input
                     type="text"
@@ -118,12 +118,11 @@ const DashProfile = () => {
                 </div>
               </div>
               <div className="flex justify-center px-4">
-                <div className="relative z-0  mb-6 group  w-full ">
-                  <input
-                    type="email"
+                <div className="relative z-0 w-full mb-6 group">
+                  <textarea
                     name="floating_email"
                     id="floating_email"
-                    className="block h-[100px] py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
+                    className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
                     placeholder=" "
                     required
                   />
