@@ -7,8 +7,12 @@ import Login from "./../pages/UserPages/Login/Login";
 import UserForm from "./../pages/UserPages/UserForm/UserForm";
 import GetUpdate from "../pages/UserPages/GetUpdate/GetUpdate";
 import DashHome from "../Components/AdminComponent/DashHome/DashHome";
+
 import DashProfile from "../Components/AdminComponent/DashProfile/DashProfile";
 import DashCashBook from "../Components/AdminComponent/DashCashBook/DashCashBook";
+
+import UserDashboard from "../Components/UserComponent/UserDashboard/UserDashboard";
+
 
 const Router = createBrowserRouter([
   {
