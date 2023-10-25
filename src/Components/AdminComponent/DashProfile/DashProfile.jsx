@@ -22,7 +22,6 @@ const DashProfile = () => {
                     name="floating_name"
                     id="floating_name"
                     className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -38,7 +37,6 @@ const DashProfile = () => {
                     name="floating_email"
                     id="floating_email"
                     className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -56,7 +54,6 @@ const DashProfile = () => {
                     name="floating_name"
                     id="floating_name"
                     className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -72,7 +69,6 @@ const DashProfile = () => {
                     name="floating_email"
                     id="floating_email"
                     className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -90,7 +86,6 @@ const DashProfile = () => {
                     name="floating_name"
                     id="floating_name"
                     className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -106,7 +101,6 @@ const DashProfile = () => {
                     name="floating_email"
                     id="floating_email"
                     className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -124,7 +118,6 @@ const DashProfile = () => {
                     name="floating_email"
                     id="floating_email"
                     className="block h-[100px] py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#141E46] peer"
-                    placeholder=" "
                     required
                   />
                   <label
@@ -149,17 +142,15 @@ const DashProfile = () => {
       {/* right column  */}
       <div className="md:w-1/3 ">
         <div className="flex space-y-4 w-max flex-col justify-center items-center bg-white p-8 rounded-xl">
-          <div className=" ">
+          <div>
             <img
               className="rounded-xl"
               src="https://i.ibb.co/nL9YjTp/Screenshot-3.png"
-              alt=""
             />
           </div>
           <div className="w-full space-y-4">
             <Button className="w-full py-5 bg-[#141E46]">Upload Image</Button>
             <p className="text-sm text-blue-gray-400">
-              {" "}
               * recommended size minimum 550px
             </p>
           </div>
