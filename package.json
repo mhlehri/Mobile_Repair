@@ -19,6 +19,7 @@
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.17.0",
+    "react-step-progress-bar": "^1.0.3",
     "recharts": "^2.9.0",
     "sort-by": "^1.2.0"
   },

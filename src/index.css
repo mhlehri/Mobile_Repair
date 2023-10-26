@@ -10,3 +10,14 @@ body {
 .container {
   padding: 0px 8px;
 }
+
+
+
+/* progress bar css don't delete it  */
+.transitionStep {
+  filter: grayscale(1);
+}
+
+.transitionStep.accomplished {
+  filter: grayscale(0);
+}
