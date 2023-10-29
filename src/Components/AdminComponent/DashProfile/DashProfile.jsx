@@ -2,11 +2,11 @@ import { Button } from "@material-tailwind/react";
 
 const DashProfile = () => {
   return (
-    <div className="flex flex-col md:flex-row md:h-[100vh] justify-center items-center gap-5   w-full container mx-auto">
+    <div className="flex my-20 lg:my-10 flex-col md:flex-row lg:h-[100vh] justify-center items-center gap-5   w-full container mx-auto">
       {/* left column  */}
 
       <div className="flex flex-col md:w-1/2 space-y-6">
-        <div>
+        <div className="">
           <h1 className="text-4xl font-bold">My Profile</h1>
         </div>
         <div className="bg-white p-10 rounded-xl ">
