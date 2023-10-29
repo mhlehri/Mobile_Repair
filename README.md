@@ -1,7 +1,3 @@
 # Mobile Repair  
 
-Main 
-|
-Development
-|            |                |        |
-Sarker       OurDashboard     safi     lehri
+# site link : https://mobile-repair.netlify.app
