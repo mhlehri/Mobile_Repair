@@ -8,10 +8,10 @@ const Banner = () => {
         <div>
           <img
             src="https://i.ibb.co/fYJGLVS/3178996.webp"
-            className="rounded-lg "
+            className="rounded-lg"
           />
         </div>
-        <div className="w-full lg:w-1/2 ">
+        <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">
             Mobile Solution
           </h1>
@@ -20,7 +20,7 @@ const Banner = () => {
             Reliable Service, and Unbeatable Quality. Your Trusted Partner for
             Mobile Solutions!
           </p>
-          <Link to={"/userForm"}>
+          <Link to="/userForm">
             <Button
               size="sm"
               className="btn text-white border-none hover:bg-[#141E46] bg-[#141E46] "
